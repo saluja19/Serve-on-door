@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Page No. 13</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <style type="text/css">
+      *
+      {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body
+      {
+        
+        background-image: url("colon breaker.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgb(217,54,54,0.1);
+      }
+      h5 { text-align: center;
+          font-size: 18px; }
+
+       hr{
+      border: solid black 1px;
+    }
+    .phone
+        {
+             font-size: 20px;
+             font-weight: bolder;
+             margin-left: 5px;
+        }
+        .place
+        {
+          font-weight: bold;
+          border-radius: 7px;
+          padding: 5px;
+        }
+        
+       .btn-primary
+        {
+         
+          min-width: 167px;
+          height: 41px;
+          border: none;
+          background-color:rgb(217, 54, 54);
+          margin-bottom: 30px;
+        }
+        .same_class
+        {
+            width: 27px;
+            height: 33px;
+            margin-left: 4px;
+            text-align: center;
+        }
+        .anchor a
+        {
+             text-decoration-line: none;
+             color: black;
+        }
+      </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Link with Backend</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Press the Button</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h5 class="modal-title"><strong>Salon at Home</strong></h5>
+          <hr>
+        </div>
+        <div class="modal-body">
+          <div class="mt-3 phone text-center">Enter Verification Code</div>
+                 <div class="mt-3 text-center">We have sent you a 4 digit OTP on <br/> 8619724390 <span style="color: red;">Edit</span></div> 
+                 <div class="mt-4 text-center">
+                    <div>
+                 <input class="same_class" onkeyup="function1(this,num2)" maxlength="1" id="num1"  type="text" name="num1">
+                 <input class="same_class" maxlength="1" onkeydown="del(event,this,num1)"   onkeyup="function1(this,num3)"id="num2" type="text" name="num2">
+                 <input class="same_class" maxlength="1" onkeydown="del(event,this,num2)"   onkeyup="function1(this,num4)"  id="num3" type="text" name="num3">
+                 <input class="same_class" maxlength="1" onkeydown="del(event,this,num3)"  id="num4" type="text" name="num4">
+                 <br/>
+                   </div>
+                 <div class="anchor"><a href="#">Resend OTP</a></div>
+             </div>
+                 <br>
+                  <div class=" mt-5 text-center">
+                          <button type="button" class=" text-center btn btn-primary">Login</button>
+                      </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript">
+               var a = document.getElementById('num1');
+               var b = document.getElementById('num2');
+               var c = document.getElementById('num3');
+               var d = document.getElementById('num4');
+                var arr = new Array(); 
+                function function1(first,last)
+               {
+                   if(first.value.length)
+                   {
+
+                       last.focus();
+                   }      
+               }
+                
+                function del(event,first,last) {
+              
+                     var key= event.keyCode;
+                     // if(a.value.length===0 && b.value.length===0 && c.value.length===0 && d.value.length===0)
+                     // {
+                     //    arr.length=0;
+                     // }
+                     arr.push(key);
+                     for(var i=0;i<arr.length;i++)
+                     {
+                        if(arr[i]===8 && arr[i-1]===8 && !(first.value.length))
+                        {
+                            last.focus();
+                        }
+                     }
+                                
+
+                    }
+   
+         </script>
+
+</body>
+</html>

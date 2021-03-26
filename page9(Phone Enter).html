@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Page No. 9</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <style type="text/css">
+      *
+      {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body
+      {
+        
+        background-image: url("colon breaker.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgb(217,54,54,0.1);
+      }
+      h5 { text-align: center;
+          font-size: 18px; }
+
+       hr{
+      border: solid black 1px;
+    }
+    .phone
+        {
+             font-size: 20px;
+             font-weight: bolder;
+             margin-left: 5px;
+        }
+        .place
+        {
+          font-weight: bold;
+          border-radius: 7px;
+          padding: 5px;
+        }
+        
+       .btn-primary
+        {
+         
+          min-width: 167px;
+          height: 41px;
+          border: none;
+          background-color:rgb(217, 54, 54);
+          margin-bottom: 30px;
+        }
+      </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Link with Backend</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Press the button</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h5 class="modal-title"><strong>Salon at Home</strong></h5>
+          <hr>
+        </div>
+        <div class="modal-body">
+          <div class="mt-3 phone text-center">Enter your phone number</div>
+          <br>
+                 <div class="mt-3 text-center"><input class="text-center place" type="phone" name="Number" placeholder=" Phone Number"></div>
+                 <br>
+                 <div class=" mt-5 text-center">
+                          <button type="button" class=" text-center btn btn-primary">Continue</button>
+                      </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
